@@ -12,6 +12,10 @@ struct ViewC: View {
     
     var body: some View {
         VStack{
+            Text("Resources")
+                .font(.title)
+                .foregroundColor(Color.cream)
+                .bold()
             HStack{
                 Button(action: {
                     openURL(URL(string:"https://sso.ou.edu/idp/startSSO.ping?PartnerSpId=aws-prod-one")!)
@@ -97,4 +101,3 @@ struct ViewC_Previews: PreviewProvider {
         ViewC()
     }
 }*/
-
